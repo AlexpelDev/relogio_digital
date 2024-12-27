@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Alinha verticalmente */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #05000a;
+  color: #ecf0f1;
+}
+
+h2 {
+  color:#ffffff;
+  font-size: 36px;
+  margin-bottom: 20px; /* Espaço entre o título e o relógio */
+}
+
+#clock {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  background: #000000;
+  padding: 20px 40px;
+  border-radius: 10px;
+  animation: glow 3s infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 10px #ff0000;
+  }
+  25% {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px #00ff00;
+  }
+  50% {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px #0000ff;
+  }
+  75% {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px #ff00ff;
+  }
+  100% {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 10px #ff0000;
+  }
+}
